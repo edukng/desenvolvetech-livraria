@@ -4,7 +4,7 @@ import com.desenvolve.anotacoes.entity.Editora;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 
-interface EditoraRepository extends JpaRepository<Editora, Integer> {
+public interface EditoraRepository extends JpaRepository<Editora, Integer> {
 
 }
 

@@ -17,8 +17,11 @@ import java.io.Serializable;
 public class Autor implements Serializable {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "CODIGO_AUTOR", nullable = false)
+    private int codigo;
+
+    @Column(name = "PRIMEIRO_NOME_AUTOR", nullable = false)
     private String primeiroNome;
 
     @Column(name = "SEGUNDO_NOME_AUTOR", nullable = false)

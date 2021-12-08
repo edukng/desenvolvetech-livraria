@@ -9,7 +9,7 @@ import javax.persistence.*;
 import java.io.Serializable;
 import java.util.List;
 
-// Editora 1<->0 Livro 0X->1Autor
+// Editora 1<->0 Livro 0X->0 Autor
 
 @Getter
 @Setter
@@ -20,7 +20,7 @@ import java.util.List;
 public class Editora implements Serializable {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "CODIGO_EDITORA", nullable = false)
     private int codigo;
 

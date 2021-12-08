@@ -18,7 +18,7 @@ import java.util.List;
 public class Livro implements Serializable {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "CODIGO_LIVRO", nullable = false)
     private int codigo;
 
